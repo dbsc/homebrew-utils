@@ -11,13 +11,14 @@ class Rubber < Formula
   head "https://gitlab.com/latex-rubber/rubber.git", branch: "master"
 
   depends_on "python@3.8"
+  depends_on "texinfo"
 
   def install
     venv = virtualenv_create(libexec, "python3.8")
-		venv.extend(PythonSetupInstallMethods)
+    venv.extend(PythonSetupInstallMethods)
 
     cd buildpath do
-			venv.python_setup_install_and_link
+      venv.python_setup_install_and_link
     end
   end
 end
