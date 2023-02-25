@@ -12,7 +12,7 @@ class Rubber < Formula
 
   depends_on "python@3.8"
   depends_on "texinfo" => :build
-  depends_on :tex
+  depends_on "texlive"
 
   def install
     venv = virtualenv_create(libexec, "python3.8")
