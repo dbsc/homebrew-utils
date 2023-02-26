@@ -19,6 +19,7 @@ class Rubber < Formula
     venv.extend(PythonSetupInstallMethods)
 
     cd buildpath do
+      # TODO: fix manpages link
       venv.python_setup_install_and_link(link_manpages: true)
     end
   end
