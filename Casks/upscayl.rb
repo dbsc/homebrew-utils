@@ -8,4 +8,10 @@ cask "upscayl" do
   homepage "https://upscayl.github.io"
 
   app "Upscayl.app"
+
+  zap trash: [
+    "~/Library/Preferences/org.upscayl.app.plist",
+    "~/Library/Saved Application State/org.upscayl.app.savedState/",
+    "~/Library/Application Support/Upscayl/",
+  ]
 end
