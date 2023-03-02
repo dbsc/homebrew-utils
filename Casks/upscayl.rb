@@ -6,4 +6,6 @@ cask "upscayl" do
   name "Upscayl"
   desc "Open source AI image upscaler"
   homepage "https://upscayl.github.io"
+
+  app "Upscayl.app"
 end
