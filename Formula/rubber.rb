@@ -20,6 +20,7 @@ class Rubber < Formula
 
     cd buildpath do
       # TODO: fix manpages link
+      # TODO: fix completions (https://formulae.brew.sh/formula/meson)
       venv.python_setup_install_and_link(link_manpages: true)
     end
   end
