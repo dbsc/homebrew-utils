@@ -1,6 +1,8 @@
 module PythonSetupInstallMethods
+  include Language::Python
+
   def python_setup_install(args)
-    @formula.system @venv_root/"bin/python", "setup.py", "install", *args
+    @formula.system @venv_root/"bin/python", *setup_install_args(prefix), *args
   end
 
   def python_setup_install_and_link(args: [], link_manpages: true)
