@@ -7,6 +7,7 @@ class MoodleDl < Formula
   head "https://github.com/dbsc/moodle-dl.git", branch: "main"
 
   depends_on "python@3.9"
+  depends_on "ffmpeg"
 
   resource "aiodns" do
     url "https://files.pythonhosted.org/packages/27/79/df72e25df0fdd9bf5a5ab068539731d27c5f2ae5654621ae0c92ceca94cf/aiodns-3.0.0.tar.gz"
