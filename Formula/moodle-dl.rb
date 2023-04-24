@@ -10,7 +10,7 @@ class MoodleDl < Formula
   depends_on "ffmpeg"
 
   def install
-    # Fix: not installing resources correctly
+    # FIX: not installing resources correctly
     virtualenv_install_with_resources
   end
 end
