@@ -6,7 +6,7 @@ class MoodleDl < Formula
   license "GPL-3.0-or-later"
   head "https://github.com/dbsc/moodle-dl.git", branch: "main"
 
-  depends_on "python@3.11"
+  depends_on "python@3.9"
   depends_on "ffmpeg"
 
   def install
