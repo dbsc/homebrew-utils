@@ -1,6 +1,5 @@
 class Sold < Formula
   desc "Modern Linker"
-  # url "https://github.com/bluewhalesystems/sold.git", branch: "main"
   head "https://github.com/bluewhalesystems/sold.git", branch: "main"
 
   depends_on :macos
