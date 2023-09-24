@@ -2,6 +2,7 @@ class Charon < Formula
     desc "Interface with the rustc compiler for the purpose of program verification"
     homepage "https://github.com/AeneasVerif/charon"
     url "https://github.com/AeneasVerif/charon/archive/refs/heads/main.zip"
+    version "unknown"
 
     depends_on "rustup"
     depends_on "ocaml"
